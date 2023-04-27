@@ -1,0 +1,63 @@
+1. SignIn Modal Button
+<!-- <section>
+        <div class="container">
+            <span type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                <i class="fa-solid fa-lock"></i>
+                Sign In
+            </span>
+        </div> -->
+
+    <!-- Modal -->
+    <!-- <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                            Login Form
+                        </h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+
+                        <form>
+
+                            <label>
+                                <i class="fa-solid fa-user"></i>
+                                Email
+                            </label>
+                            <div>
+                                <input type="email" placeholder="enter your Email" required>
+                            </div>
+
+                            <hr>
+
+                            <label>
+                                <i class="fa-solid fa-key"></i>
+                                Password
+                            </label>
+                            <div>
+                                <input type="password" placeholder="enter password" required>
+                            </div>
+
+                            <hr>
+
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fa-solid fa-lock"></i>
+                                Signin
+                            </button>
+                        </form>
+
+                    </div>
+                    <div class="modal-footer">
+                        New User?
+                        <button type="button" class="btn btn-primary">
+                            Sign Up
+                        </button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+    <!-- <button type="button" class="btn btn-primary">Understood</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->

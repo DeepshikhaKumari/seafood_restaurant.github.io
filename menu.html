@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu of Food</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2087a6d4e2.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="menuItem">
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="4000">
+                    <img src="Pizza/pizza4.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-md-block">
+                        <div class="data">
+                            <div class="h4">
+                                <h4>NEW MENU</h4>
+                            </div>
+                            <h1>PIZZA</h1>
+                            <h5>WITH SEAFOOD</h5>
+                            <a href="#pizza_" class="orderBtn">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="Octopus/Pan_Fried_Octopus.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-md-block">
+                        <div class="data">
+                            <div class="h4">
+                                <h4>NEW MENU</h4>
+                            </div>
+                            <h5>Pan Fried</h5>
+                            <h1>Octopus</h1>
+                            <a href="#octopus_" class="orderBtn">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="Images/Seafood_Pasta_.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-md-block">
+                        <div class="data">
+                            <div class="h4">
+                                <h4>NEW MENU</h4>
+                            </div>
+                            <h5>Seafood</h5>
+                            <h1>Pasta</h1>
+                            <a href="#pasta_" class="orderBtn">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Returning back to the main page -->
+
+    <nav aria-label="breadcrumb" id="newDish">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/food.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Food Menu </li>
+        </ol>
+    </nav>
+
+    <!-- Food items list -->
+    <section class="foods" id="foods">
+        <nav aria-label="..." class="pageFood">
+            <ul class="pagination justify-content-center">
+                <li class="page-item active" aria-current="page">
+                    <a class="page-link" href="#">All Food</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#fish_">Fish</a></li>
+                <li class="page-item"><a class="page-link" href="#pasta_">Pasta</a></li>
+                <li class="page-item"><a class="page-link" href="#shellfish_">ShellFish</a></li>
+                <li class="page-item"><a class="page-link" href="#pizza_">Pizza</a></li>
+                <li class="page-item"><a class="page-link" href="#octopus_">Octopus</a></li>
+                <li class="page-item"><a class="page-link" href="#seaweed_">Seaweed</a></li>
+                <li class="page-item"><a class="page-link" href="#others_">Other Seafoods</a></li>
+            </ul>
+        </nav>
+
+        <!--  food list -->
+
+
+        <div class="food">
+            <div class="cards" id="fish_">
+                <div class="card">
+                    <div class="box">
+                        <img src="Fish/fish1 (1).jpg" alt="">
+                    </div>
+                </div>
+                <div class="text">
+                    <h2>Garlic Herb Baked Cod with Lemon</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, dolor.</p>
+
+                    <div class="price">
+                        <h3>Rs. 800/-</h3>
+                    </div>
+
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn1">-</button>
+                        <button type="button" class="btn addBtn">Add</button>
+                        <button type="button" class="btn btn2">+</button>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- Up arrow button -->
+
+            <a href="#newDish">
+                <button class="btn color arrowUp" id="arrowUp" type="button"><i
+                        class="fa-solid fa-arrow-up fa-bounce"></i></button>
+            </a>
+            <!--  -->
+
+
+            <div class="cards">
+                <div class="card">
+                    <div class="box">
+                        <img src="Fish/fish1 (2).jpg" alt="">
+                    </div>
+                </div>
+                <div class="text">
+                    <h2>Baked Cod Fish</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, dolor.</p>
+
+                    <div class="price">
+                        <h3>Rs. 580/-</h3>
+                    </div>
+
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn1">-</button>
+                        <button type="button" class="btn addBtn">Add</button>
+                        <button type="button" class="btn btn2">+</button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <div class="box">
+                        <img src="Fish/Salmon_Fish.jpg" alt="">
+                    </div>
+                </div>
+                <div class="text">
+                    <h2>Grilled Salmon Fish</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, dolor.</p>
+
+                    <div class="price">
+                        <h3>Rs. 1500/-</h3>
+                    </div>
+
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn1">-</button>
+                        <button type="button" class="btn addBtn">Add</button>
+                        <button type="button" class="btn btn2">+</button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <div class="box">
+                        <img src="Fish/Sardines_Fish.jpg" alt="">
+                    </div>
+                </div>
+                <div class="text">
+                    <h2>Crispy Air Frier Fish in Garlic Butter Sauce</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, dolor.</p>
+
+                    <div class="price">
+                        <h3>Rs. 500/-</h3>
+                    </div>
+
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn1">-</button>
+                        <button type="button" class="btn addBtn">Add</button>
+                        <button type="button" class="btn btn2">+</button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <div class="box">
+                        <img src="Fish/Lobster.jpg" alt="">
+                    </div>
+                </div>
+                <div class="text">
+                    <h2>Lobster Boil with Corn</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, dolor.</p>
+
+                    <div class="price">
+                        <h3>Rs. 600/-</h3>
+                    </div>
+
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn1">-</button>
+                        <button type="button" class="btn addBtn">Add</button>
+                        <button type="button" class="btn btn2">+</button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="cards" id="pasta_">
+                <div class="card">
+                    <div class="box">
+                        <img src="Pasta/Seafood_Pasta.jpg" alt="">
+                    </div>
+                </div>
+                <div class="text">
+                    <h2>Seafood Pasta</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, dolor.</p>
+
+                    <div class="price">
+                        <h3>Rs. 450/-</h3>
+                    </div>
+
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn1">-</button>
+                        <button type="button" class="btn addBtn">Add</button>
+                        <button type="button" class="btn btn2">+</button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <div class="box">
+                        <img src="Pasta/Shrimp Tortelline Pasta Toss.jpg" alt="">
+                    </div>
+                </div>
+                <div class="text">
+                    <h2>Shrimp Tortelline Pasta Toss</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, dolor.</p>
+
+                    <div class="price">
+                        <h3>Rs. 450/-</h3>
+                    </div>
+
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn1">-</button>
+                        <button type="button" class="btn addBtn">Add</button>
+                        <button type="button" class="btn btn2">+</button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <div class="box">
+                        <img src="Pasta/creamy_seafood_pasta.jpg" alt="">
+                    </div>
+                </div>
+                <div class="text">
+                    <h2>creamy seafood pasta</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, dolor.</p>
+
+                    <div class="price">
+                        <h3>Rs. 500/-</h3>
+                    </div>
+
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn1">-</button>
+                        <button type="button" class="btn addBtn">Add</button>
+                        <button type="button" class="btn btn2">+</button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <div class="box">
+                        <img src="Pasta/seafood pasta with roasted veggies.jpg" alt="">
+                    </div>
+                </div>
+                <div class="text">
+                    <h2>seafood pasta with roasted veggies</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, dolor.</p>
+
+                    <div class="price">
+                        <h3>Rs. 400/-</h3>
+                    </div>
+
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn1">-</button>
+                        <button type="button" class="btn addBtn">Add</button>
+                        <button type="button" class="btn btn2">+</button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <div class="box">
+                        <img src="Pasta/mixed-seafood-salad.jpeg" alt="">
+                    </div>
+                </div>
+                <div class="text">
+                    <h2>mixed-seafood-salad</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, dolor.</p>
+
+                    <div class="price">
+                        <h3>Rs. 300/-</h3>
+                    </div>
+
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn1">-</button>
+                        <button type="button" class="btn addBtn">Add</button>
+                        <button type="button" class="btn btn2">+</button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="cards" id="shellfish_">
+                <div class="card">
+                    <div class="box">
+                        <img src="ShellFish/Mussel.jpg" alt="">
+                    </div>
+                </div>
+                <div class="text">
+                    <h2>Mussel</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, dolor.</p>
+
+                    <div class="price">
+                        <h3>Rs. 500/-</h3>
+                    </div>
+
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn1">-</button>
+                        <button type="button" class="btn addBtn">Add</button>
+                        <button type="button" class="btn btn2">+</button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <div class="box">
+                        <img src="ShellFish/Oysters.jpg" alt="">
+                    </div>
+                </div>
+                <div class="text">
+                    <h2>Oysters</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, dolor.</p>
+
+                    <div class="price">
+                        <h3>Rs. 700/-</h3>
+                    </div>
+
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn1">-</button>
+                        <button type="button" class="btn addBtn">Add</button>
+                        <button type="button" class="btn btn2">+</button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <div class="box">
+                        <img src="ShellFish/prawn.jpg" alt="">
+                    </div>
+                </div>
+                <div class="text">
+                    <h2>prawn</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, dolor.</p>
+
+                    <div class="price">
+                        <h3>Rs. 900/-</h3>
+                    </div>
+
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn1">-</button>
+                        <button type="button" class="btn addBtn">Add</button>
+                        <button type="button" class="btn btn2">+</button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <div class="box">
+                        <img src="ShellFish/Scallop.jpg" alt="">
+                    </div>
+                </div>
+                <div class="text">
+                    <h2>Scallop</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, dolor.</p>
+
+                    <div class="price">
+                        <h3>Rs. 1000/-</h3>
+                    </div>
+
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn1">-</button>
+                        <button type="button" class="btn addBtn">Add</button>
+                        <button type="button" class="btn btn2">+</button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <div class="box">
+                        <img src="ShellFish/crab.jpg" alt="">
+                    </div>
+                </div>
+                <div class="text">
+                    <h2>crab</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, dolor.</p>
+
+                    <div class="price">
+                        <h3>Rs. 580/-</h3>
+                    </div>
+
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn1">-</button>
+                        <button type="button" class="btn addBtn">Add</button>
+                        <button type="button" class="btn btn2">+</button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="cards" id="pizza_">
+                <div class="card">
+                    <div class="box">
+                        <img src="Pizza/pizza4.jpg" alt="">
+                    </div>
+                </div>
+                <div class="text">
+                    <h2>Mixed Seafood Roasted Pizza with Seahurb</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, dolor.</p>
+
+                    <div class="price">
+                        <h3>Rs. 1000/-</h3>
+                    </div>
+
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn1">-</button>
+                        <button type="button" class="btn addBtn">Add</button>
+                        <button type="button" class="btn btn2">+</button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <div class="box">
+                        <img src="Pizza/Pizza2.jpg" alt="">
+                    </div>
+                </div>
+                <div class="text">
+                    <h2>Thin Cheese Burst Seafood Pizza</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, dolor.</p>
+
+                    <div class="price">
+                        <h3>Rs. 1200/-</h3>
+                    </div>
+
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn1">-</button>
+                        <button type="button" class="btn addBtn">Add</button>
+                        <button type="button" class="btn btn2">+</button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <div class="box">
+                        <img src="Pizza/pizza3.jpg" alt="">
+                    </div>
+                </div>
+                <div class="text">
+                    <h2>Fluffy Seafood Pizza </h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, dolor.</p>
+
+                    <div class="price">
+                        <h3>Rs. 1200/-</h3>
+                    </div>
+
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn1">-</button>
+                        <button type="button" class="btn addBtn">Add</button>
+                        <button type="button" class="btn btn2">+</button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <div class="box">
+                        <img src="Pizza/Letizza-Chilli-Seafood-Pizza.jpg" alt="">
+                    </div>
+                </div>
+                <div class="text">
+                    <h2>Grilled Cheese Seafood Pizza with Herb</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, dolor.</p>
+
+                    <div class="price">
+                        <h3>Rs. 1500/-</h3>
+                    </div>
+
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn1">-</button>
+                        <button type="button" class="btn addBtn">Add</button>
+                        <button type="button" class="btn btn2">+</button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="cards" id="octopus_">
+                <div class="card">
+                    <div class="box">
+                        <img src="Octopus/Pan_Fried_Octopus.jpg" alt="">
+                    </div>
+                </div>
+                <div class="text">
+                    <h2>Pan-Seared Octopus with Italian Vegetable</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, dolor.</p>
+
+                    <div class="price">
+                        <h3>Rs. 800/-</h3>
+                    </div>
+
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn1">-</button>
+                        <button type="button" class="btn addBtn">Add</button>
+                        <button type="button" class="btn btn2">+</button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <div class="box">
+                        <img src="Octopus/Whole-octopus.jpg" alt="">
+                    </div>
+                </div>
+                <div class="text">
+                    <h2>Baby Octopus With Spicy Garlic Dressing </h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, dolor.</p>
+
+                    <div class="price">
+                        <h3>Rs. 500/-</h3>
+                    </div>
+
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn1">-</button>
+                        <button type="button" class="btn addBtn">Add</button>
+                        <button type="button" class="btn btn2">+</button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <div class="box">
+                        <img src="Octopus/Octopus.jpg" alt="">
+                    </div>
+                </div>
+                <div class="text">
+                    <h2>Potato with Baby Octopus</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, dolor.</p>
+
+                    <div class="price">
+                        <h3>Rs. 400/-</h3>
+                    </div>
+
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn1">-</button>
+                        <button type="button" class="btn addBtn">Add</button>
+                        <button type="button" class="btn btn2">+</button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <div class="box">
+                        <img src="Octopus/octopus.jpeg" alt="">
+                    </div>
+                </div>
+                <div class="text">
+                    <h2>Grilled Octopus in a Chilli Vinaigrette</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, dolor.</p>
+
+                    <div class="price">
+                        <h3>Rs. 1000/-</h3>
+                    </div>
+
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn1">-</button>
+                        <button type="button" class="btn addBtn">Add</button>
+                        <button type="button" class="btn btn2">+</button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <div class="box">
+                        <img src="Octopus/octopus (1).jpg" alt="">
+                    </div>
+                </div>
+                <div class="text">
+                    <h2>Octopus Appetizer with Mango Salsa</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, dolor.</p>
+
+                    <div class="price">
+                        <h3>Rs. 1400/-</h3>
+                    </div>
+
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn1">-</button>
+                        <button type="button" class="btn addBtn">Add</button>
+                        <button type="button" class="btn btn2">+</button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <div class="box">
+                        <img src="Octopus/bigOctopus.jpg" alt="">
+                    </div>
+                </div>
+                <div class="text">
+                    <h2>Baby Octopus Soup</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, dolor.</p>
+
+                    <div class="price">
+                        <h3>Rs. 750/-</h3>
+                    </div>
+
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn1">-</button>
+                        <button type="button" class="btn addBtn">Add</button>
+                        <button type="button" class="btn btn2">+</button>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="cards" id="seaweed_">
+                <div class="card">
+                    <div class="box">
+                        <img src="seaweed/sea-crunchy-seaweed-snack.jpg" alt="">
+                    </div>
+                </div>
+                <div class="text">
+                    <h2>Crunchy Seaweed Snack</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, dolor.</p>
+
+                    <div class="price">
+                        <h3>Rs. 400/-</h3>
+                    </div>
+
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn1">-</button>
+                        <button type="button" class="btn addBtn">Add</button>
+                        <button type="button" class="btn btn2">+</button>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="cards">
+                <div class="card">
+                    <div class="box">
+                        <img src="seaweed/Seaweed.jpg" alt="">
+                    </div>
+                </div>
+                <div class="text">
+                    <h2>Seaweed Salad with Lemon </h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, dolor.</p>
+
+                    <div class="price">
+                        <h3>Rs. 500/-</h3>
+                    </div>
+
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn1">-</button>
+                        <button type="button" class="btn addBtn">Add</button>
+                        <button type="button" class="btn btn2">+</button>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="cards">
+                <div class="card">
+                    <div class="box">
+                        <img src="seaweed/Seaweed_1.webp" alt="">
+                    </div>
+                </div>
+                <div class="text">
+                    <h2>Boiled Seasweed</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, dolor.</p>
+
+                    <div class="price">
+                        <h3>Rs. 450/-</h3>
+                    </div>
+
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn1">-</button>
+                        <button type="button" class="btn addBtn">Add</button>
+                        <button type="button" class="btn btn2">+</button>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="cards">
+                <div class="card">
+                    <div class="box">
+                        <img src="seaweed/seeweed_food.jpg" alt="">
+                    </div>
+                </div>
+                <div class="text">
+                    <h2>Sesame Seaweed Salad</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, dolor.</p>
+
+                    <div class="price">
+                        <h3>Rs. 600/-</h3>
+                    </div>
+
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn1">-</button>
+                        <button type="button" class="btn addBtn">Add</button>
+                        <button type="button" class="btn btn2">+</button>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="cards" id="others_">
+                <div class="card">
+                    <div class="box">
+                        <img src="Other_Seafood/seafood_fried_rice.png" alt="">
+                    </div>
+                </div>
+                <div class="text">
+                    <h2>Seafood Fried Rice</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, dolor.</p>
+
+                    <div class="price">
+                        <h3>Rs. 800/-</h3>
+                    </div>
+
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn1">-</button>
+                        <button type="button" class="btn addBtn">Add</button>
+                        <button type="button" class="btn btn2">+</button>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="cards">
+                <div class="card">
+                    <div class="box">
+                        <img src="Other_Seafood/seafood_Curry.jpg" alt="">
+                    </div>
+                </div>
+                <div class="text">
+                    <h2>Seafood Curry</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, dolor.</p>
+                    <div class="price">
+                        <h3>Rs. 700/-</h3>
+                    </div>
+
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn1">-</button>
+                        <button type="button" class="btn addBtn">Add</button>
+                        <button type="button" class="btn btn2">+</button>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="cards">
+                <div class="card">
+                    <div class="box">
+                        <img src="Other_Seafood/buttery_Shrimp_Scampi.jpg" alt="">
+                    </div>
+                </div>
+                <div class="text">
+                    <h2>buttery Shrimp Scampi</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, dolor.</p>
+
+                    <div class="price">
+                        <h3>Rs. 1000/-</h3>
+                    </div>
+
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn1">-</button>
+                        <button type="button" class="btn addBtn">Add</button>
+                        <button type="button" class="btn btn2">+</button>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="cards">
+                <div class="card">
+                    <div class="box">
+                        <img src="Other_Seafood/seafood_cornbread.jpg" alt="">
+                    </div>
+                </div>
+                <div class="text">
+                    <h2>Seafood Cornbread</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, dolor.</p>
+
+                    <div class="price">
+                        <h3>Rs. 500/-</h3>
+                    </div>
+
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn1">-</button>
+                        <button type="button" class="btn addBtn">Add</button>
+                        <button type="button" class="btn btn2">+</button>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="cards">
+                <div class="card">
+                    <div class="box">
+                        <img src="Other_Seafood/seaFood_mix.jpg" alt="">
+                    </div>
+                </div>
+                <div class="text">
+                    <h2>SeaFood Mix</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, dolor.</p>
+
+                    <div class="price">
+                        <h3>Rs. 1100/-</h3>
+                    </div>
+
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn1">-</button>
+                        <button type="button" class="btn addBtn">Add</button>
+                        <button type="button" class="btn btn2">+</button>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="cards">
+                <div class="card">
+                    <div class="box">
+                        <img src="Other_Seafood/crab.jpg" alt="">
+                    </div>
+                </div>
+                <div class="text">
+                    <h2>Roasted Crab with dip Cheese</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, dolor.</p>
+
+                    <div class="price">
+                        <h3>Rs. 900/-</h3>
+                    </div>
+
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn1">-</button>
+                        <button type="button" class="btn addBtn">Add</button>
+                        <button type="button" class="btn btn2">+</button>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
